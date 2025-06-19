@@ -9,33 +9,52 @@ let sliderInterval;
 const products = [
     {
         id: 1,
-        name: "SDFM Classic Black",
-        price: 149.99,
-        image1: "",
-        image2: "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg"
+        name: "Elixir JORTS",
+        price: 249.99,
+        image1: "https://i.pinimg.com/736x/c3/f6/b5/c3f6b5d8212a6e00ba94a4175fdce7b0.jpg",
     },
     {
         id: 2,
-        name: "SDFM Premium Gray",
-        price: 154.99,
+        name: "Always Far Signature Hoodie",
+        price: 300.00,
         image1: "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
-        image2: "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg"
     },
     {
         id: 3,
-        name: "SDFM Signature Navy",
+        name: "NoneofUs Balaclava black and white",
         price: 159.99,
-        image1: "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
-        image2: "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg"
+        image1: "https://i.pinimg.com/736x/01/7a/04/017a04120dc2b609f1d9f95973601f47.jpg",
     },
     {
         id: 4,
-        name: "SDFM Limited Edition",
+        name: "Custom Glasses Custom 1of1",
+        price: 150.00,
+        image1: "https://i.pinimg.com/736x/c8/c9/61/c8c961306bdef0a47526f12368f29df5.jpg",
+    },
+    
+
+    {
+    
+        id: 5,
+        name: "Wavy Hoodie",
+        price: 249.99,
+        image1: "https://i.pinimg.com/736x/9d/e5/15/9de5157380fe4cd56ad360bbac0b99e3.jpg",
+    },
+
+    {
+    
+        id: 6,
+        name: "Only Fear God Jeans",
         price: 199.99,
-        image1: "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
-        image2: "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg"
-    }
-];
+        image1: "https://i.pinimg.com/736x/b9/6a/a9/b96aa9d29cc8dfeb4bae17ff74c7bca7.jpg",
+    },
+
+
+    
+
+
+
+    ];
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {

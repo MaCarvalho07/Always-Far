@@ -292,6 +292,35 @@ body {
     background: #374151;
 }
 
+
+.about-section {
+    width: 100%;
+    padding: 3rem 0;
+    background: #0a0a0a;
+    color: #f1f1f1;
+    text-align: left;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    
+    
+}
+
+
+
+.about-text {
+    width: 50%;
+    font-size: 1.3rem
+    
+}
+
+
+ 
+
 /* Footer */
 .footer {
     width: 100%;
