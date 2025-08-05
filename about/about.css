@@ -1,62 +1,56 @@
-/* Fonte e base da página */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(to bottom, #0a0a0a, #0a0a0a);
+    background: #0a0a0a;
     color: #f1f1f1;
     overflow-x: hidden;
     margin: 0;
 }
 
-/* VÍDEO DE FUNDO (imagem ou gif fixo no topo) */
-.banner-video img {
-    position: fixed;
+/* SEÇÃO DO VÍDEO HERO */
+.video-hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* O VÍDEO (GIF nesse caso) */
+.bg-video {
+    position: absolute;
     top: 0;
     left: 0;
-    height: 400px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
 }
 
-/* OVERLAY (opcional, pra dar contraste nos textos) */
-.banner-video::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 500px;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 0;
-}
-
-/* LOGO */
-.header {
+/* CONTEÚDO CENTRALIZADO POR CIMA DO VÍDEO */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    padding-top: 2rem;
     z-index: 1;
-    position: relative;
 }
 
 .header img {
     width: 100px;
     height: 100px;
+    margin-bottom: 1rem;
 }
 
-/* TEXTOS "Always" */
 h1 {
-    text-align: center;
     font-size: 2rem;
-    margin: 1rem 0;
-    position: relative;
-    z-index: 1;
+    margin: 0.5rem 0;
 }
 
-/* SEÇÃO DE CONTEÚDO - COMEÇA DEPOIS DO VÍDEO */
+/* SEÇÃO DEPOIS DO VÍDEO */
 .about-section {
-    margin-top: 500px; /* igual à altura do vídeo */
+    margin-top: 0;
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 10rem 3rem;
     background: #0a0a0a;
     color: #f1f1f1;
     display: flex;
@@ -65,7 +59,7 @@ h1 {
     text-align: center;
 }
 
-/* RODAPÉ */
+/* FOOTER */
 .footer {
     width: 100%;
     padding: 1.5rem 0;
