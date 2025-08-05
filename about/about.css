@@ -1,40 +1,77 @@
+/* Fonte e base da página */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: linear-gradient(to bottom, #0a0a0a, #0a0a0a);
     color: #f1f1f1;
-    cursor: none;
     overflow-x: hidden;
     margin: 0;
 }
 
-
-.about-section {
-    margin-top: 50%;
+/* VÍDEO DE FUNDO (imagem ou gif fixo no topo) */
+.banner-video img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 400px;
     width: 100%;
-    padding: 3rem 0;
-    background: #0a0a0a;
-    color: #f1f1f1;
-    display: fl;
-    margin: 0 auto;
-   
+    object-fit: cover;
+    z-index: -1;
 }
 
+/* OVERLAY (opcional, pra dar contraste nos textos) */
+.banner-video::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
 
+/* LOGO */
+.header {
+    text-align: center;
+    padding-top: 2rem;
+    z-index: 1;
+    position: relative;
+}
 
+.header img {
+    width: 100px;
+    height: 100px;
+}
 
+/* TEXTOS "Always" */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+    position: relative;
+    z-index: 1;
+}
 
+/* SEÇÃO DE CONTEÚDO - COMEÇA DEPOIS DO VÍDEO */
+.about-section {
+    margin-top: 500px; /* igual à altura do vídeo */
+    width: 100%;
+    padding: 3rem 1rem;
+    background: #0a0a0a;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-
- 
-
-/* Footer */
+/* RODAPÉ */
 .footer {
-    margin: 0 auto;
     width: 100%;
     padding: 1.5rem 0;
     background: #101010;
     color: #9ca3af;
-    margin-top: 40%;
+    margin-top: 4rem;
 }
 
 .footer .container {
